@@ -54,6 +54,6 @@ class ViewController: UIViewController {
         self.present(alert, animated: true)
         
     }
-    
+    //AKSAM BURAYA DIGER TUSLARI DA EKLEMELI BISEY OLUR MU DENEYELIM
 }
 
