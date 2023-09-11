@@ -1,24 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlertProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OKe-ih-d38">
+                                <rect key="frame" x="62" y="154" width="291" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="7If-HS-Xd9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uCU-mt-CIi">
+                                <rect key="frame" x="62" y="222" width="291" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Qfe-eW-xKs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Again:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="klo-zL-frO">
+                                <rect key="frame" x="62" y="294" width="291" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="ejh-Kl-2YP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3T0-tm-yH9">
+                                <rect key="frame" x="156" y="390" width="141" height="82"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signUpClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="brC-2W-Bci"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrX-o2-K1c">
+                                <rect key="frame" x="137" y="76" width="149" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="cYT-Ug-TJR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DrX-o2-K1c" secondAttribute="trailing" constant="142" id="0Qo-qg-g0W"/>
+                            <constraint firstItem="OKe-ih-d38" firstAttribute="leading" secondItem="uCU-mt-CIi" secondAttribute="leading" id="0iH-sx-t1n"/>
+                            <constraint firstItem="uCU-mt-CIi" firstAttribute="trailing" secondItem="klo-zL-frO" secondAttribute="trailing" id="LCo-GH-Qlg"/>
+                            <constraint firstItem="OKe-ih-d38" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="Lbr-Bu-YcJ"/>
+                            <constraint firstItem="DrX-o2-K1c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="Ogn-AQ-7dh"/>
+                            <constraint firstItem="OKe-ih-d38" firstAttribute="top" secondItem="DrX-o2-K1c" secondAttribute="bottom" constant="33" id="Sc2-3d-JyG"/>
+                            <constraint firstItem="klo-zL-frO" firstAttribute="top" secondItem="uCU-mt-CIi" secondAttribute="bottom" constant="38" id="URH-de-L6b"/>
+                            <constraint firstItem="3T0-tm-yH9" firstAttribute="top" secondItem="klo-zL-frO" secondAttribute="bottom" constant="62" id="UX5-uN-bpY"/>
+                            <constraint firstItem="3T0-tm-yH9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="axu-dN-vEn"/>
+                            <constraint firstItem="DrX-o2-K1c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="cyb-c1-u5n"/>
+                            <constraint firstItem="uCU-mt-CIi" firstAttribute="leading" secondItem="klo-zL-frO" secondAttribute="leading" id="lkh-Ym-ljd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3T0-tm-yH9" secondAttribute="bottom" constant="420" id="mqJ-tD-FgQ"/>
+                            <constraint firstItem="uCU-mt-CIi" firstAttribute="top" secondItem="OKe-ih-d38" secondAttribute="bottom" constant="34" id="oUL-c2-no1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3T0-tm-yH9" secondAttribute="trailing" constant="131" id="t3O-fi-7GR"/>
+                            <constraint firstItem="OKe-ih-d38" firstAttribute="trailing" secondItem="uCU-mt-CIi" secondAttribute="trailing" id="yhJ-Ne-4Rs"/>
+                            <constraint firstItem="OKe-ih-d38" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ys0-RV-osh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="password2TextField" destination="klo-zL-frO" id="ihh-zY-HDc"/>
+                        <outlet property="passwordTextField" destination="uCU-mt-CIi" id="2rF-fg-xNB"/>
+                        <outlet property="usernameTextField" destination="OKe-ih-d38" id="zno-nX-mB5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
