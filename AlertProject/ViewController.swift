@@ -56,5 +56,6 @@ class ViewController: UIViewController {
     }
     //AKSAM BURAYA DIGER TUSLARI DA EKLEMELI BISEY OLUR MU DENEYELIM
     // diger tuslardan nasil bi islem yapilabilir.
+    // tuslarin renkli olmasi onemli
 }
 
