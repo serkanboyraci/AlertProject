@@ -17,22 +17,23 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
     @IBAction func signUpClicked(_ sender: Any) {
         
         /*let alert = UIAlertController(title: "Error!", message: "Username Not Found!", preferredStyle: .alert)
-        // to give alert pop-up, you can use UIAlertController
-        
-        let okButton = UIAlertAction(title: "OK", style: .default) //default normal mavi, cancel kalın mavi, destructive kalın kırmızı
-        { UIAlertAction in
-            print("OK Clicked")
-        }
-        //{ in //buttona basıldığında yapılacak kodu açar ihtiyaç yoksa nil yazabilirsin.
-       
-        alert.addAction(okButton) //oluşturualn butpnu alert içine gömmek için yazmak zorundasın
-        
-        self.present(alert, animated: true, completion: nil) //bir şeyi göstermek için present kullanılır.
-        // completion - sonrasında bir şey yapılsın mı diye soruyor?
-        */
+         // to give alert pop-up, you can use UIAlertController
+         
+         let okButton = UIAlertAction(title: "OK", style: .default) //default normal mavi, cancel kalın mavi, destructive kalın kırmızı
+         { UIAlertAction in
+         print("OK Clicked")
+         }
+         //{ in //buttona basıldığında yapılacak kodu açar ihtiyaç yoksa nil yazabilirsin.
+         
+         alert.addAction(okButton) //oluşturualn butpnu alert içine gömmek için yazmak zorundasın
+         
+         self.present(alert, animated: true, completion: nil) //bir şeyi göstermek için present kullanılır.
+         // completion - sonrasında bir şey yapılsın mı diye soruyor?
+         */
         
         //
         if usernameTextField.text == "" {
@@ -47,6 +48,7 @@ class ViewController: UIViewController {
         
     }
     
+        
     func alertAction(titleEntry:String, messageEntry:String) {
         let alert = UIAlertController(title: titleEntry, message: messageEntry, preferredStyle: .alert)
         let okButton = UIAlertAction(title: "OK", style: .default)
