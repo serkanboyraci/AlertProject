@@ -38,11 +38,11 @@ class ViewController: UIViewController {
         if usernameTextField.text == "" {
             alertAction(titleEntry: "Error!", messageEntry: "Username Not Found!") //fonk olmasaydı her seferinde aynı kod blogunu yazacaktık.
         } else if passwordTextField.text == "" {
-            alertAction(titleEntry: "Error", messageEntry: "Enter Password!")
+            alertAction(titleEntry: "Error!", messageEntry: "Enter Password!")
         } else if passwordTextField.text != password2TextField.text {
-            alertAction(titleEntry: "Error", messageEntry: "Passwords are not same!")
+            alertAction(titleEntry: "Error!", messageEntry: "Passwords are not same!")
         } else {
-            alertAction(titleEntry: "Success", messageEntry: "User Saved")
+            alertAction(titleEntry: "Success", messageEntry: "User Saved.")
         }
         
     }
